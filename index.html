@@ -10,17 +10,23 @@
         <div class="logo">Desafio encriptador</div>
         <div class="container">
             <section class="input-section">
-                <textarea name="" id="" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="message" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="info">Solo letras minúsculas y sin acentos</div>
                 <div class="buttons">
-                    <button class="encrypt">Encriptar</button>
-                    <button class="decrypt">Desencriptar</button>
+                    <button class="encrypt" onclick="crypt()">Encriptar</button>
+                    <button class="decrypt" onclick="decrypt()">Desencriptar</button>
                 </div>
             </section>
             <div class="output-section">
-                <h3>Ningun mensaje fue encontrado</h3>
+                <div id ="results">
+                    <h2 id="crypted-message"></h2>
+                    <button>Copiar</button>
+                </div>
+                <div id ="no-results">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                </div>
             </div>
         </div>
-        
+        <script src="scripts/encriptador.js"></script>
     </body>
 </html>
