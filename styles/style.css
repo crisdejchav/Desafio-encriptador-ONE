@@ -65,7 +65,7 @@ textarea::placeholder{
     color: #0A3871;
 }
 
-.info {
+#info {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
@@ -73,7 +73,7 @@ textarea::placeholder{
     color: #495057;
 }
 
-.info::before {
+#info::before {
     content: "i";
     display: inline-flex;
     align-items: center;
@@ -117,6 +117,10 @@ button {
     flex-direction: column;
 }
 
+#results-message{
+    text-align: justify;
+    font-size: 1.5vw;
+}
 /* Media queries para pc */
 @media (max-width: 1440px) and (max-height:1024px) {
     .input-section {
@@ -219,6 +223,27 @@ button {
     }
 }
 
+.output-section{
+    padding: 10px;
+    justify-content: start;
+}
 
+#results {
+    justify-content: space-between;
+    height: 90%;
+    width: 100%;
+}
 
-
+#no-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+.copyButton { 
+    flex:0;
+    width: 100%;
+    background-color: #FFF;
+    border:1px solid #0A3871;
+    color: #0A3871;
+}
